@@ -23,7 +23,7 @@ for i in range(len(fbook_df)):
 
     data_fpath = f"{nl.input_dir}/{filename}"
     # read data file path
-    df = get_xctd_df(data_fpath)
+    df,ymd,hms = get_xctd_df(data_fpath)
 
     # save data as csv.
-    df.to_csv(f"{nl.output_dir}/{obskey}.csv")
+    df.to_csv(f"{nl.output_dir}/{obskey}_{ymd}{hms}.csv")

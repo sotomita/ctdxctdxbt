@@ -49,7 +49,7 @@ output_dir = "./data/output"
 
 ### 5. XCTD深度時間断面の作図```time_seq_xctd.py```
 - 上記を実行する，ただしデータは```XCTD*_all.CTD```ではなく```XCTD*_10m.CTD```を使う
-- ```time_seq_xctd.py```を編集し実行する
+- ```time_seq_xctd.py```を編集し実行する  
 | 変数名|説明|
 |:---|:---|
 |```fig_dir```|図の保存パスの設定|

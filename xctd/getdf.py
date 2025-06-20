@@ -8,7 +8,7 @@ def get_float(x) -> float:
     return float(x)
 
 
-def get_xctd_df(fpath: str) -> pd.DataFrame:
+def get_xctd_df(fpath: str) -> tuple[pd.DataFrame, str, str]:
     dpth_list = []
     tmp_list = []
     cnd_list = []
@@ -19,6 +19,8 @@ def get_xctd_df(fpath: str) -> pd.DataFrame:
 
         # read a header record
         header = file.read(256)
+        ymd = header.split(",")[2]
+        hms = header.split(",")[3]
 
         # read data records
         data = file.read().split("\n")[:-1]
@@ -55,4 +57,4 @@ def get_xctd_df(fpath: str) -> pd.DataFrame:
         }
     )
 
-    return df
+    return df, ymd, hms

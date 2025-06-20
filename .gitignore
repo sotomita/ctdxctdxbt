@@ -194,5 +194,5 @@ cython_debug/
 .cursorindexingignore
 
 *.csv
-*.CTD
+#*.CTD
 fig

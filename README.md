@@ -49,7 +49,8 @@ output_dir = "./data/output"
 
 ### 5. XCTD深度時間断面の作図```time_seq_xctd.py```
 - 上記を実行する，ただしデータは```XCTD*_all.CTD```ではなく```XCTD*_10m.CTD```を使う
-- ```time_seq_xctd.py```を編集し実行する  
+- ```time_seq_xctd.py```を編集し実行する
+  
 | 変数名|説明|
 |:---|:---|
 |```fig_dir```|図の保存パスの設定|
@@ -57,7 +58,8 @@ output_dir = "./data/output"
 |```bottom```|作図深度の下限の設定|
 |```cut_top```|データ最表層を取り除く高さを設定(default:2m)|
 |```cut_bottom```|データ最下層を取り除く高さを設定(default:50m)|
-|```times```|作図をする時刻の設定|
+|```times```|作図をする時刻の設定|  
+
 変な値が入っていなければ```cut_top```,```cut_bottom```はゼロでも良い．```times```は広めに取っても構わない．
 
 

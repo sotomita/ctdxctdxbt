@@ -63,7 +63,10 @@ output_dir = "./data/output"
 変な値が入っていなければ```cut_top```,```cut_bottom```はゼロでも良い．```times```は広めに取っても構わない．
 
 ### 6. T-Sダイアグラムの作図```ts_diagram.py```
-```field_book.csv```に記載された観測すべてのT-Sダイアグラムを描画する
+```field_book.csv```に記載された観測すべてのT-Sダイアグラムを描画する  
+#### 必要ライブラリ
+- [GSW-Python](https://teos-10.github.io/GSW-Python/index.html)  
+
 ```ts_diagram.py```を編集し実行する
 
 |変数名|説明|
